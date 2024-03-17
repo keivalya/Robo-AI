@@ -75,3 +75,34 @@ Click on **Continue**
 
 
 Now, ***CONGRATULATIONS!!!** Ubuntu Installation is finished.*
+
+## First-things-first
+Right after installation, open Terminal and run the following commands
+
+> sudo apt update
+
+> sudo apt upgrade
+
+You will *almost always* run these commands after any new installation, or updates.
+
+> sudo apt autoremove
+
+> sudo apt install build-essential gcc make perl dkms
+
+### I will be using some Programming tools (which are completely optional for you to install)
+
+> sudo apt install terminator
+
+In ROS/ROS2, one has to deal with multiple terminals (or sessions) simultaneously. This application helps in managing them very well.
+
+> sudo snap install --classic code
+
+We will need a *noice* code editor. VSCode is my personal favourite. However, one may prefer coding on a notepad also, *I will not be offended*.
+
+> sudo apt install python3-pip
+
+## ROS2 Installation *(finallyyy)*
+To avoid repetation of instructions, I recommend you to go through [ROS2 official installation documentation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html) and follow it along.
+
+It is truly simple.
+

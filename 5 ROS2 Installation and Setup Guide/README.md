@@ -106,3 +106,18 @@ To avoid repetation of instructions, I recommend you to go through [ROS2 officia
 
 It is truly simple.
 
+After successful installation, you will need to run this command on every new shell you open to have access to the ROS2 commands.
+
+> source /opt/ros/humble/setup.bash
+
+However, it is a tedius task! So, if you don’t want to have to source the setup file every time you open a new shell, then you can add the command to your shell startup script:
+
+> echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+
+To undo this, locate your system’s shell startup script and remove the appended source command.
+
+Sourcing ROS2 setup files will set several environment variables necessary for operating ROS2. If you ever have problems finding or using your ROS2 packages, make sure that your environment is properly set up using the following command:
+
+> printenv | grep -i ROS
+
+The ROS2 development environment needs to be correctly configured before use. This can be done in two ways: either sourcing the setup files in every new shell you open, or adding the source command to your startup script.
